@@ -35,26 +35,35 @@ html,body{
   font-weight: 600;
   font-size: 1.2vw;
 }
-.navbar1 i{
+.ri-menu-3-line{
   font-weight: 800;
    display: none; 
+}
+.ri-contrast-2-fill{
+  font-weight: 800;
+  font-size: 2.5vw;
+ /* margin-bottom: 0vw; */
 }
 .content{
   width: 100%;
   height: calc(100% - 100px);
-  /* background-color: lightcoral; */
+   /* background-color:black;  */
   display: flex;
+  
 }
 .left{
   height: 100%;
   width: 50%;
   /* background-color: blue; */
   padding: 3vw 3.5vw;
+ 
 }
 .right{
   height: 100%;
   width: 50%;
-   background-color: crimson; 
+     
+    /* background-color: black;  */
+   
 }
 .left h1{
   font-size: 9vw;
@@ -93,19 +102,22 @@ span{
   .navbar{
     height:70px;
   }
-  .navbar1 i{
+  .ri-menu-3-line {
     display: block;
     font-size: 6vw;
   }
   .content{
    flex-direction: column;
+   height: calc(100% - 70px);
   }
   .left{
     width: 100%;
     padding: 8vw 8vw;
   }
   .right{
+    
     width: 100%;
+
   }
   .left h1{
     font-size: 10vw;
@@ -121,5 +133,10 @@ span{
   }
   .left p{
     font-size: 4vw;
+  }
+  .ri-contrast-2-fill{
+    font-weight: 800;
+    font-size: 6vw;
+   /* margin-bottom: 0vw; */
   }
 }
