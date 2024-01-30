@@ -1,12 +1,14 @@
 const icon =document.querySelector(".ri-contrast-2-fill")
-const main =document.querySelector(".content");
-const text=document.querySelector("h1 ");
-const para=document.querySelector("p");
 
 
-icon.addEventListener("click",function(){
-  main.style.backgroundColor = "black";
-  text.style.color="white";
-  para.style.color="white";
- 
-})
+
+
+icon.onclick=function(){
+ document.body.classList.toggle("dark-theme");
+ if(document.body.classList.contains("dark-theme")){
+  icon.src="/portfolio/sun-line.png" ;
+ }
+   else{
+  icon.src="/portfolio/contrast-2-fill.png";
+  }
+}
